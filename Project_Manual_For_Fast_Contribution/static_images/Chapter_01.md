@@ -1,6 +1,6 @@
 # All About Digger
 
-![Digger Folder Structure](static_Images\Digger.png)
+![Digger Folder Structure](./static_Images/Digger.png)
 
 The image illustrates the folder structure of the Digger project, an IaC orchestration tool.  
 It includes top-level folders like `.github`, `backend`, `cli`, and `cli_e2e`.  
@@ -15,11 +15,11 @@ The structure supports Digger’s backend, CLI, and deployment workflows.
 
 # Digger Backend Architecture Overview
 
-![Digger Backend folder ](static_Images\backend.png)
+![Digger Backend folder ](./static_Images/backend.png)
 
 The backend directory interacts with `main.go` through the `Bootstrap` function. A 10-step optimization checklist includes embedding HTML templates, leveraging standard libraries, and profiling with `runtime/pprof`. Third-party libraries used are `gin` for the web server, `sentry` for error tracking, `sessions` for session management, and `slog` for logging. Profiling tools like `Setuprofiler` and `PeriodicProfiling` are emphasized for performance monitoring. The `Bootstrap` function initializes the server, configuring logging, error tracking, and middleware. It creates a `gin.Engine` instance and sets up routes for GitHub webhooks and API endpoints. Middleware manages CORS, authentication, 
 
-![Digger Backend folder ](static_Images\backend_01.png)
+![Digger Backend folder ](./static_Images/backend_01.png)
 
 The image outlines the Digger project's backend structure within the `backend` directory.  
 It highlights `ci_backends` with `ci_backends.go`, defining the `CIBackend` interface for GitHub workflows.  
